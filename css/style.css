@@ -1,0 +1,331 @@
+:root{
+	--color-negro: #000000;
+	--color-blanco: #FFFFFF;
+	--color-gris: #b0b3b5;
+	--fuente-titulos: 'Charmonman', cursive;
+	--fuente-2: 'Chakra Petch', sans-serif;
+}
+html,body{
+	margin: 0;
+	height: 100%;
+}
+#fondoPrincipal{
+	background-image: url(../images/fondoGalaxyNasa.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.imgLogo{
+	width: 80px;
+	height: auto;
+}
+.colorBlackFondo{
+	background-color: var(--color-negro);
+}
+.fuenteTitulos{
+	font-family: var(--fuente-titulos);
+}
+
+#logoPrincipal{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h1.fuenteTitulos{
+	color: var(--color-negro);
+	font-weight: bold;
+}
+
+.colorSemiTransparente{
+	border-radius: 25px;
+	background-color: rgba(255,255,255,.5);
+}
+
+.paderNavegacion{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegacion a{
+	text-decoration: none;
+	color: var(--color-gris);
+	font-family: var(--fuente-2);
+	font-size: 1.2rem;
+}
+
+.navegacion a:hover{
+	transform: scale3d(1.3, 1.3, 1);
+	transition: .5s;
+	color: var(--color-blanco);
+	
+}
+
+.btn3d:hover{
+	transform: scale3d(1.1, 1.1, 1);
+	transition: .5s;
+}
+
+#contenedorOurUniverse{
+	margin-top: 250px;
+	margin-bottom: 20px;
+}
+
+#contenedorOurUniverse .row .colorSemiTransparente{
+	padding-top: 10px;
+}
+
+#buscador input{
+	text-align: center;
+	color: var(--color-negro);
+	background-color: rgba(255,255,255,.5);
+}
+
+#buscador input::placeholder{
+	color: var(--color-negro);
+	background-color: rgba(255,255,255,.5);
+	text-align: center;
+}
+
+#buscar:hover{
+	color: var(--color-blanco);
+}
+
+
+/*
+*	Clases de la sección del sign In and Login
+*/
+.fondoIngresoBody{
+	background-image: url(../images/gifTierra.gif);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.fondoRegistroBody{
+	background-image: url(../images/Spaceanimation.gif);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.cuerpo{
+	margin-top: 190px;
+}
+
+.cuerpo h1{
+	font-family: var(--fuente-titulos);
+	font-weight: bold;
+	color: var(--color-blanco);
+}
+
+.sin_fondo{
+	background-color: rgba(255,255,255,.3);
+	color: var(--color-negro);
+	text-align: center;
+	font-weight: 500;
+}
+
+.letraBlanco{
+	color: var(--color-blanco);
+}
+
+.cuerpo input::placeholder,
+.cuerpo:-ms-input-placeholder{
+	color: var(--color-negro);
+	color: #000000;
+	text-align: center;
+}
+.msgLoginDown{
+	color: var(--color-blanco);
+	font-size: 1.5rem;
+}
+
+.colorLinks{
+	text-decoration: none;
+	color: var(--color-gris);
+	transition: .3s;
+}
+
+.colorLinks:hover{
+	color: var(--color-blanco);
+}
+/*
+*	Clases de la sección del carrousel
+*/
+#contenedorCarrousel{
+	display: none;
+}
+
+.carousel-inner .carousel-item img{
+	width: 200px;
+	max-height: 450px;
+}
+
+
+/*
+*	Clases de la sección del Modal de carga
+*/
+.cargando img{
+	border-radius: 20px;
+}
+.cargando .row .col-12 p{
+	font-size: 40px;
+	color: var(--color-negro);
+	font-family: var(--fuente-titulos);
+}
+
+
+/*
+* Estilos de la página galaxias
+*/
+
+#fondo-cambiante{
+	background-image: url(../images/fondoRojo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	transition: .5s;
+}
+
+.contenedorGalaxy{
+	color: var(--color-blanco);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: var(--color-blanco);
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+#fila1 .contenedorGalaxy{
+	cursor: pointer;
+	background-image: url(../images/viaLactea.jpg);
+}
+
+#fila2 .contenedorGalaxy:first-child{
+	margin-left: 30%;
+	cursor: pointer;
+	background-image: url(../images/canisMajor.jpg);
+}
+.contenedorGalaxy:first-child span{
+	text-align: center;
+}
+.contenedorGalaxy:last-child span{
+	text-align: center;
+}
+
+#fila2 .contenedorGalaxy:last-child{
+	margin-right: 30%;
+	cursor: pointer;
+	background-image: url(../images/sag2cann.jpg);
+}
+
+#fila3 .contenedorGalaxy:first-child{
+	margin-left: 25%;
+	cursor: pointer;
+	background-image: url(../images/LMC.jpg);
+}
+
+#fila3 .contenedorGalaxy:last-child{
+	margin-right: 25%;
+	cursor: pointer;
+	background-image: url(../images/SMC.jpg);
+}
+#fila4 .contenedorGalaxy:first-child{
+	cursor: pointer;
+	background-image: url(../images/osaMenor.jpg);
+}
+
+#fila4 .contenedorGalaxy:last-child{
+	cursor: pointer;
+	background-image: url(../images/draco.jpg);
+}
+
+#fila5 .contenedorGalaxy:first-child{
+	margin-left: 25%;
+	cursor: pointer;
+	background-image: url(../images/sextans.jpg);
+}
+
+#fila5 .contenedorGalaxy:last-child{
+	margin-right: 25%;
+	cursor: pointer;
+	background-image: url(../images/Sculptor.jpg);
+}
+#fila6 .contenedorGalaxy:first-child{
+	margin-left: 30%;
+	cursor: pointer;
+	background-image: url(../images/carina.jpg);
+}
+
+#fila6 .contenedorGalaxy:last-child{
+	margin-right: 30%;
+	cursor: pointer;
+	background-image: url(../images/fornax.jpg);
+}
+#filaFinal .contenedorGalaxy{
+	cursor: pointer;
+	background-image: url(../images/fenix.jpg);
+}
+.contenido{
+	position: absolute;
+	z-index: 10;
+	color: var(--color-negro);
+	width: 250px;
+	height: 270px;
+	left: 42%;
+	top: 35%;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 15px;
+	padding: 10px 15px;
+	display: none;
+}
+.contenido h4{
+	text-align: center;
+}
+
+.contenido span{
+	text-align: center;
+}
+
+
+/* Estilos de nosotros page */
+
+#fondo-cambiante2{
+	background-image: url(../images/fondoGalaxyNasa.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	display: none;
+	transition: .5s;
+}
+.cuerpoNosotros{
+	color: var(--color-blanco);
+}
+
+.tituloNosotros{
+	padding-top: 20px;
+}
+.tituloNosotros h1, .titulosNosotros{
+	font-family: var(--fuente-titulos);
+}
+
+.parrafo{
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 20px!important;
+}
+
+#yo, #nasa, .imgs{
+	width: 260px;
+	height: auto;
+	border-radius: 20px!important;
+}
+
+{
+
+}

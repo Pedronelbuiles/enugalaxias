@@ -1,0 +1,77 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="
+        sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Charmonman" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fondoIngresoBody">
+    <div class="container">
+            <div class="cuerpo">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1>Ingresar</h1>
+                        </div>
+                    </div>
+                    <div class="formIngreso">
+                        <form >
+                                
+                            <div class="row text-center mt-1">
+                                <div class="col-12">
+                                        
+                                        <label for="txtUser" class="letraBlanco">Usuario</label>
+                                </div>
+                            </div>
+                            <div class="row text-center mt-2">
+                                <div class="col-12">
+                                        
+                                        <input type="text" class="sin_fondo" id="txtUser" name="txtUser" placeholder="Usuario">
+                                </div>
+                            </div>
+                            <div class="row text-center mt-1">
+                                <div class="col-12">
+                                        
+                                        <label for="txtPassword" class="letraBlanco">Contraseña</label>
+                                </div>
+                            </div>
+                            <div class="row text-center mt-2">
+                                <div class="col-12">
+                                        <input type="password" class="sin_fondo" id="txtPassword" name="txtPassword" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-6 text-right pr-4">
+                                        <input type="button" onclick="login();" class="btn btn-success" value="Ingresar">
+                                </div>
+                                <div class="col-6">
+                                        <input type="reset" class="btn btn-danger">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="msgLoginDown">¿Aún no tienes una cuenta? <a href="resgistro.html" class="colorLinks">Registrate</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div>
+                                    <span id="loginFail" style=" display: none;"><h1>Datos incorrectos</h1></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

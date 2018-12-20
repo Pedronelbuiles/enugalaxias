@@ -1,0 +1,58 @@
+:root{
+	--color-negro: #000000;
+	--color-blanco: #FFFFFF;
+	--color-gris: #b0b3b5;
+	--fuente-titulos: 'Charmonman', cursive;
+	--fuente-2: 'Chakra Petch', sans-serif;
+}
+html,body{
+	margin: 0;
+	height: 100%;
+}
+.cargando img{
+	border-radius: 20px;
+}
+
+.cargando .row .col.s12 p{
+	font-size: 40px;
+	color: var(--color-negro);
+	font-family: var(--fuente-titulos);
+	margin-top: 15px;
+}
+
+.margenArriba{
+	padding-top: 40px;
+}
+
+#fondoPrincipal{
+	background-image: url(../images/fondoGalaxyNasa.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.visibilidad{
+    visibility: hidden!important;
+}
+.carousel{
+    height: 500px!important;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover){
+    .carousel-item img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+#linkVuelta{
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--color-blanco);
+}

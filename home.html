@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>E N U</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="
+        sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				<link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Charmonman" rel="stylesheet">
+				<link rel="shortcut icon" href="images/iconGalaxy.png" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+			<div class="cargando container-fluid">
+				<div class="row mt-3">
+					<div class="col-12 text-center">
+							<img src="images/cargando.gif" alt="">
+					</div>
+				</div>
+				<div class="row mt-2">
+					<div class="col-12 text-center">
+						<p>Cargando...</p>
+					</div>
+				</div>
+			</div>
+			<div id="fondoPrincipal">
+    	<div class="container-fluid">
+    		<div class="row colorBlackFondo">
+    			<div class="col-3 text-center " id="logoPrincipal">
+    				<img src="images/logoFederationOfPlanets.jpg" alt="Logo Federation of Planets" class="imgLogo">
+    			</div>
+    			<div class="col-6 paderNavegacion">
+    				<!-- Navegacion de la página -->
+    				<nav class="navegacion">
+    					<ul class="nav justify-content-center">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="galaxias.html">Galaxias</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="home.html">ENU</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="nosotros.html">Nosotros</a>
+						  </li>
+						</ul>
+    				</nav>
+    				<!-- Navegacion de la página -->
+    			</div>
+    			<div class="col-3 paderNavegacion">
+    				<div class="row">
+    					<div class="col-6 text-right">
+    						<a href="index.html" class="btn btn-light btn3d">Ingresar</a>
+    					</div>
+    					<div class="col-6">
+    						<a href="resgistro.html" class="btn btn-success btn3d">Registrarse</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+		<div class="container" id="contenedorOurUniverse">
+			<div class="row">
+				<div class="col-12 colorSemiTransparente text-center">
+					<h1 class="fuenteTitulos">Explora Nuestro Universo</h1>
+				</div>
+			</div>
+			<form method="get" action="result.html">
+			<div class="row mt-2" id="buscador">
+				<div class="col-8 offset-1 input-group">
+					<input type="text" class="form-control" name="id" id="inputBuscar" placeholder="¿Qué buscas en el universo? ( Busca en ingles por favor (｡◕‿◕｡) )" aria-label="Recipient's username" aria-describedby="basic-addon2">
+				</div>
+				<div class="col-2 input-group-append">
+					<input type="submit" class="input-group-text btn btn-dark" id="buscar">Buscar</a>
+				</div>
+			</div>
+		</form>
+		</div>
+
+		
+	</div>
+		
+		
+
+		
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		</body>
+		<!-- Información importante:
+					Mi API KEY from NASA : qKOXcVCoeBlZlR45PAuRKRrtmPNRO4SMKZGcf1B6
+								usarla en la url para hacer peticiones
+				 Una página para generar mis json o lo que yo necesite es https://www.mocky.io/
+		-->
+</html>
